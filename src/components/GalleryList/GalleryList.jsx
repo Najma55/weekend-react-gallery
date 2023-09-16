@@ -16,7 +16,7 @@ export default function GalleryList() {
   return (
     <div className="items">
       {gallery.map((item) => (
-        <GalleryItem key={item.id} item={item} />
+        <GalleryItem key={item.id} item={item} refreshList={()=>getItemsFromAPI()}/>
       ))}
     </div>
   );
