@@ -37,11 +37,14 @@
 button {
   padding: 10px 5px;
   border-radius: 8px;
-  width: max-content;
+  width: 100%;
   color: white;
   background-color: blueviolet;
   height: max-content;
+  outline: 0;
+  border: 0;
 }
 p {
   color: #686868;
+  text-align: left;
 }
