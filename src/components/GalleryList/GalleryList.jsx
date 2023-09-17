@@ -6,7 +6,7 @@ export default function GalleryList() {
   const [gallery, setGallery] = useState([]);
   // Fetch Gallery list from API ---- save the fetched data to the gallery state
   const getItemsFromAPI = async () => {
-    const response = await axios.get("http://localhost:5000/gallery");
+    const response = await axios.get("/gallery");
     console.log(response.data);
     setGallery(response.data)
   };
